@@ -328,8 +328,18 @@ textarea:-ms-input-placeholder {
   margin-right: auto;
   margin-left: auto;
 }
-.body-bg {
-  background: url(../../images/bady-bg.jpg) center 200px no-repeat;
+.video-icon {
+  display: block;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  top: 50%;
+  left: 50%;
+  margin: -18px 0 0 -18px;
+  background: url(../../images/video-small-click.png) center center no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
 }
 .l-table-list {
   margin: 0 auto 12px auto;
@@ -777,9 +787,16 @@ textarea:-ms-input-placeholder {
   height: 264px;
 }
 .shopping-marquee .img {
+  position: relative;
   width: 169px;
   height: 169px;
   overflow: hidden;
+}
+.shopping-marquee .jiathis {
+  position: absolute;
+  z-index: 99999;
+  bottom: 0;
+  right: 0;
 }
 .shopping-marquee .text {
   padding: 8px 4px;
@@ -1307,7 +1324,8 @@ textarea:-ms-input-placeholder {
   filter: alpha(opacity=100);
 }
 /* video-list-img */
-.video-list-img {
+.video-list-img,
+.bottom-video-img {
   overflow: hidden;
   width: 792px;
   margin: 0 auto;
@@ -1320,17 +1338,20 @@ textarea:-ms-input-placeholder {
   height: 112px;
 }
 .box {
-  padding: 4px;
   line-height: 18px;
   position: absolute;
   bottom: -112px;
   left: 0;
-  width: 150px;
-  height: 104px;
+  width: 100%;
+  height: 112px;
   color: #afafaf;
   background: rgba(0, 0, 0, 0.7);
 }
+.box68 {
+  bottom: -68px;
+}
 .box h3 {
+  padding: 4px;
   color: #fff;
   overflow: hidden;
   display: -webkit-box;
@@ -1339,11 +1360,11 @@ textarea:-ms-input-placeholder {
 }
 .box p {
   font-size: 12px;
-  padding: 8px 0;
+  padding: 8px 4px;
 }
 .box a {
   display: inline-block;
-  margin-right: 5px;
+  margin-left: 5px;
   height: 27px;
   line-height: 27px;
   padding: 0 10px;
@@ -1352,27 +1373,82 @@ textarea:-ms-input-placeholder {
   border-radius: 2px;
   color: #5E5E5E;
 }
+.bottom-video-img li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 198px;
+  height: 198px;
+}
+.pin-box {
+  position: relative;
+}
+.pin-box-l {
+  position: absolute;
+  left: 20px;
+}
+.pin-box-r {
+  position: absolute;
+  right: 20px;
+}
+.bbs-float-left,
+.shop-float-right {
+  margin: 100px 0 0 0;
+  padding: 20px 0 0 0;
+}
 .fooder {
   width: 100%;
-  border-top: #7ea70d solid 1px;
-  background: #f8f8f8;
+  padding-top: 50px;
+  background: url(../../images/footer-down.png) top center no-repeat #545454;
+}
+.fooder .title {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
 }
 .l-fooder-mian {
   position: relative;
-  padding: 34px 0 24px 0;
-  width: 1000px;
+  padding: 34px 140px;
+  width: 920px;
   margin-right: auto;
   margin-left: auto;
 }
-.l-fooder-mian p {
+.l-fooder-mian .fooder-logo {
+  width: 200px;
+}
+.l-fooder-mian a {
+  color: #C5C5C5;
+}
+.l-fooder-mian .fooder-link {
+  width: 720px;
+}
+.l-fooder-mian .fooder-link li {
+  float: left;
+  width: 160px;
+}
+.l-fooder-mian .fooder-link a {
+  display: block;
   text-align: center;
+  color: #C5C5C5;
   height: 26px;
   line-height: 26px;
 }
-.u-two-dimension-code {
-  position: absolute;
-  top: 30px;
-  right: 0;
+.copyright {
+  padding: 20px 0;
+  height: 100px;
+  width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.copyright .l-left {
+  width: 320px;
+}
+.copyright p {
+  color: #C5C5C5;
+  line-height: 20px;
+}
+.copyright .l-right {
+  padding-top: 30px;
 }
 .fl {
   float: left;
@@ -1574,4 +1650,54 @@ textarea:-ms-input-placeholder {
   font-size: 12px;
   margin-left: 14px;
   display: inline-block;
+}
+.l-video-box {
+  margin-bottom: 10px;
+  padding: 34px 124px;
+  background: url(../../images/content-bg.png) top left repeat;
+  width: 952px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.f-video {
+  margin-bottom: 10px;
+}
+.l-video-intro {
+  margin-bottom: 10px;
+  padding: 8px 4px 8px 194px;
+  background: url(../../images/icon-info-arrows.png) left center no-repeat;
+}
+.l-video-intro p {
+  font-size: 12px;
+  color: #3f3f3f;
+  line-height: 18px;
+}
+.video-marquee-box {
+  width: 978px;
+  margin-left: 42px;
+  overflow: hidden;
+}
+.video-prev {
+  display: block;
+  width: 38px;
+  height: 200px;
+  background: url(../../images/info-video-left.png) left center no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+.video-next {
+  display: block;
+  width: 38px;
+  height: 200px;
+  background: url(../../images/info-video-right.png) left center no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+.voide-msg-bg {
+  background: #f9f3a5;
+}
+.l-vide-msg {
+  padding: 30px 10px;
 }
