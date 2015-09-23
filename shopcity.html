@@ -24,6 +24,35 @@
 
 <body>
 <div class="container">
+	<div class="top-flash-box">
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" align="absmiddle" id="FlashID" accesskey="a" title="头部动画" style="position: absolute; left:50%; margin-left:-960px; overflow:hidden"width="1900" height="530">
+		  <param name="movie" value="voide/lxl201509212136.swf" />
+		  <param name="quality" value="high" />
+		  <param name="wmode" value="transparent" />
+		  <param name="swfversion" value="15.0.0.0" />
+		  <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+		  <param name="expressinstall" value="js/expressInstall.swf" />
+		  <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+		  <!--[if !IE]>-->
+		  <object data="voide/lxl201509212136.swf" type="application/x-shockwave-flash" width="1900" height="530" align="absmiddle">
+		    <!--<![endif]-->
+		    <param name="quality" value="high" />
+		    <param name="wmode" value="transparent" />
+		    <param name="swfversion" value="15.0.0.0" />
+		    <param name="expressinstall" value="js/expressInstall.swf" />
+		    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+		    <div>
+		      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+		      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+		    </div>
+		    <!--[if !IE]>-->
+		  </object>
+		  <!--<![endif]-->
+		</object>
+		<script type="text/javascript">
+		swfobject.registerObject("FlashID");
+		</script>
+	</div>
     <div class="l-top-nav">
         <div class="top-nav-mian l-float">
             <div class="l-left font-img">全国首档大型城市安全公益娱乐节目</div>
@@ -88,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="warpper">
+		<div class="l-warpper-box">
 		    <div id="nav">
 		    	<div class="mod_cate_hd">全部商品分类</div>
 		    	<ul class="tit">
@@ -377,7 +406,190 @@
 		            </li>
 		        </ul>
 		    </div>
-		    <div style="position: absolute;left:200px;top:0;width:990px;height:510px;background: #f00;"></div>
+		    <div class="l-shop-banner s-banner">
+		    	<div class="section-focus-pic s-banner" id="section-focus-pic">
+					<div class="pages s-banner" data-scro="list">
+						<ul>
+							<li class="item s-banner" style="left:0px;">
+								<a href="#" target="_blank"><img src="word/s-banner01.jpg" width="990" height="510"></a>
+							</li>
+							<li class="item s-banner">
+								<a href="#" target="_blank"><img src="word/s-banner02.jpg" width="990" height="510"></a>
+							</li>
+							<li class="item s-banner">
+								<a href="#" target="_blank"><img src="word/s-banner03.jpg" width="990" height="510"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="controler" data-scro="controler">
+						<b class="down">1</b>
+						<b>2</b>
+						<b>3</b>
+					</div>
+					<div class="controler2" data-scro="controler2">
+						<a href="javascript:;" class="prev"><i></i></a>
+						<a href="javascript:;" class="next"><i></i></a>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div class="l-recommend-box">
+			<div class="l-today-clock">
+			</div>
+			<div class="l-today-slider">
+				<a href="javascript:void(0)" class="slider-prev" id="slider-prev">&lt;</a>
+				<div class="slider-marquee" id="slider-marquee">
+					<ul>
+						<li><a href=""><img src="word/slider-marquee (1).jpg" height="164" width="248" alt=""></a></li>
+						<li><a href=""><img src="word/slider-marquee (2).jpg" height="164" width="248" alt=""></a></li>
+						<li><a href=""><img src="word/slider-marquee (3).jpg" height="164" width="248" alt=""></a></li>
+						<li><a href=""><img src="word/slider-marquee (2).jpg" height="164" width="248" alt=""></a></li>
+						<li><a href=""><img src="word/slider-marquee (3).jpg" height="164" width="248" alt=""></a></li>
+						<li><a href=""><img src="word/slider-marquee (1).jpg" height="164" width="248" alt=""></a></li>
+					</ul>
+				</div>
+				<a href="javascript:void(0)" class="slider-next" id="slider-next">&gt;</a>
+			</div>
+		</div>
+		<div class="l-ad-f1 l-float">
+			<ul>
+				<li><a href=""><img src="word/banner-f3.jpg" height="200" width="300" alt=""></a></li>
+				<li><a href=""><img src="word/banner-f2.jpg" height="200" width="300" alt=""></a></li>
+				<li><a href=""><img src="word/banner-f4.jpg" height="200" width="300" alt=""></a></li>
+				<li><a href=""><img src="word/banner-f5.jpg" height="200" width="300" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="l-guessyou-box">
+			<div class="title">
+				<h2>猜你喜欢</h2>
+				<a href="javascript:;" class="extra">换一批</a>
+			</div>
+			<div class="m-content">
+				<div class="spacer"><i></i></div>
+				<ul>
+					<li class="fore1">
+						<div class="p-img">
+							<a  href="#" target="_blank">
+								<img  width="130" height="130" title="" src="word/shopping (1).jpg" class="">
+							</a>
+						</div>
+						<div class="p-info p-info1">
+							<div class="p-name">
+								<a  href="#" target="_blank" title="">宏碁（acer）ES1-411-C7K0 14英寸笔记本（四核N2940 4G 500G 核芯显卡 Win8.1）黑色</a>
+							</div>
+							<div class="p-price" >
+								<i>¥</i>1999.00
+							</div>
+						</div>
+					</li>
+					<li class="fore2">
+						<div class="p-img">
+							<a  href="#" target="_blank">
+								<img  width="130" height="130" title="" src="word/shopping (2).jpg" class="">
+							</a>
+						</div>
+						<div class="p-info">
+							<div class="p-name">
+								<a  href="#" target="_blank" title="">宏碁（acer）ES1-411-C7K0 14英寸笔记本（四核N2940 4G 500G 核芯显卡 Win8.1）黑色</a>
+							</div>
+							<div class="p-price" >
+								<i>¥</i>1999.00
+							</div>
+						</div>
+					</li>
+					<li class="fore3">
+						<div class="p-img">
+							<a  href="#" target="_blank">
+								<img  width="130" height="130" title="" src="word/shopping (3).jpg" class="">
+							</a>
+						</div>
+						<div class="p-info">
+							<div class="p-name">
+								<a  href="#" target="_blank" title="">宏碁（acer）ES1-411-C7K0 14英寸笔记本（四核N2940 4G 500G 核芯显卡 Win8.1）黑色</a>
+							</div>
+							<div class="p-price" >
+								<i>¥</i>1999.00
+							</div>
+						</div>
+					</li>
+					<li class="fore4">
+						<div class="p-img">
+							<a  href="#" target="_blank">
+								<img  width="130" height="130" title="" src="word/shopping (1).jpg" class="">
+							</a>
+						</div>
+						<div class="p-info">
+							<div class="p-name">
+								<a  href="#" target="_blank" title="">宏碁（acer）ES1-411-C7K0 14英寸笔记本（四核N2940 4G 500G 核芯显卡 Win8.1）黑色</a>
+							</div>
+							<div class="p-price" >
+								<i>¥</i>1999.00
+							</div>
+						</div>
+					</li>
+					<li class="fore5">
+						<div class="p-img">
+							<a  href="#" target="_blank">
+								<img  width="130" height="130" title="" src="word/shopping (4).jpg" class="">
+							</a>
+						</div>
+						<div class="p-info">
+							<div class="p-name">
+								<a  href="#" target="_blank" title="">宏碁（acer）ES1-411-C7K0 14英寸笔记本（四核N2940 4G 500G 核芯显卡 Win8.1）黑色</a>
+							</div>
+							<div class="p-price" >
+								<i>¥</i>1999.00
+							</div>
+						</div>
+					</li>
+					<li class="fore6">
+						<div class="p-img">
+							<a  href="#" target="_blank">
+								<img  width="130" height="130" title="" src="word/shopping (2).jpg" class="">
+							</a>
+						</div>
+						<div class="p-info">
+							<div class="p-name">
+								<a  href="#" target="_blank" title="">宏碁（acer）ES1-411-C7K0 14英寸笔记本（四核N2940 4G 500G 核芯显卡 Win8.1）黑色</a>
+							</div>
+							<div class="p-price" >
+								<i>¥</i>1999.00
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="l-ad-f2 l-float">
+			<div class="ad-content-left l-left">
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+			</div>
+			<div class="ad-content-center l-left">
+				<a href="" class="ad-item-b"><img src="word/ad-f22.png" height="201" width="402"></a>
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+				<div class="ad-brands-x">
+					<div class="ad-brands-con">
+						<a href=""><img src="word/9k=.jpg" height="50" width="179"></a>
+						<a href=""><img src="word/9k=.jpg" height="50" width="179"></a>
+						<a href=""><img src="word/9k=.jpg" height="50" width="179"></a>
+						<a href=""><img src="word/9k=.jpg" height="50" width="179"></a>
+						<a href=""><img src="word/9k=.jpg" height="50" width="179"></a>
+					</div>
+				</div>
+			</div>
+			<div class="ad-content-right l-right">
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+				<a href="" class="ad-item-s"><img src="word/ad-f21.png" height="201" width="201"></a>
+				<a href="" class="ad-item-b"><img src="word/ad-f22.png" height="201" width="402"></a>
+			</div>
+		</div>
+		<div class="ad-banner-box l-float">
+			<a href=""><img src="word/ad-banner (1).jpg" height="125" width="400"></a>
+			<a href=""><img src="word/ad-banner (2).jpg" height="125" width="400"></a>
+			<a href=""><img src="word/ad-banner (3).jpg" height="125" width="400"></a>
 		</div>
 	</div> <!-- end mian -->
 </div>
@@ -430,11 +642,9 @@
 </div>
 </body>
 <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/marquee.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/jquery.pin.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/marquee.js" type="text/javascript" charset="utf8"></script>
 <script src="js/mian.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/wangEditor-1.3.10.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	$("#nav .tit").slide({

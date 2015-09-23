@@ -19,17 +19,6 @@ $(function(){
 });
 // banner
 $(function() {
-        $('#banner').marquee({
-            auto: true,
-            interval: 5000 ,
-            speed: 500,
-            showNum: 1,
-            stepLen: 1,
-            prevElement: $('#u-next'),
-            nextElement: $('#u-prev')
-        });
-    });
-$(function() {
         $('#video-marquee').marquee({
             auto: false,
             interval: 5000 ,
@@ -53,6 +42,17 @@ $(function() {
       nextElement: $('#shopping-prev')
     });
   });
+$(function() {
+        $('#slider-marquee').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 4,
+            stepLen: 4,
+            prevElement: $('#slider-next'),
+            nextElement: $('#slider-prev')
+        });
+    });
 // tab
 $(function() {
   function tabs(tabTit, on, tabCon) {
