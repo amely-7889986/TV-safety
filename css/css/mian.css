@@ -3887,6 +3887,7 @@ textarea:-ms-input-placeholder {
   height: 120px;
   border: 6px solid #ffe501;
   border-radius: 80px;
+  overflow: hidden;
 }
 .u-detail ul {
   display: inline-block;
