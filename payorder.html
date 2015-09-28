@@ -56,115 +56,73 @@
     	</ul>
     </div>
 	<div class="mian l-float">
-		<div class="l-addorder-page voide-msg-bg">
+		<div class="l-addorder-page voide-msg-bg" style="padding-bottom: 24px;">
             <div class="order-flow">
-                <img src="images/submit-order.png" height="49" width="801">
+                <img src="images/payorder.png" height="49" width="801">
             </div>
-            <h2 class="order-title">
-                1.填写收货信息
-            </h2>
-            <div class="order-input-box">
-                <form method="get" id="registerform">
-                        <div class="form">
-                            <div class="div-name">
-                                <label for="phone">收件人：</label><input type="text" id="phone" class="infos" placeholder="收货人姓名">
-                            </div>
-                            <div class="div-name">
-                                <label for="mailbox">地区：</label>
-                                <select class="infos selectw select-height" id="deliverypoints">
-                                    <option value="0">省</option>
-                                    <option value="1">华北地区</option>
-                                    <option value="2">其他地区</option>
-                                </select>
-                                <select class="infos selectw select-height" id="deliverypoints">
-                                    <option value="0">市</option>
-                                    <option value="1">华北地区</option>
-                                    <option value="2">其他地区</option>
-                                </select>
-                                <select class="infos selectw select-height" id="deliverypoints">
-                                    <option value="0">区</option>
-                                    <option value="1">华北地区</option>
-                                    <option value="2">其他地区</option>
-                                </select>
-                                <input class="infos selectw " placeholder="邮编" type="text">
-                            </div>
-                            <div class="div-name">
-                                <label for="password">详细地址：</label><input type="text" name="portaddress" id="portaddress" class="infos register-second-tip " title="输入您的详细供货仓库/港口详细地址" style="width:454px;">
-                            </div>
-                            <div class="div-name">
-                                <label for="phone">手机号码：</label><input type="text" id="phone" class="infos" placeholder="请输入手机号">
-                            </div>
-                            <div class="div-name">
-                                <label for="mailbox">常用邮箱：</label><input type="text" name="mailbox" id="mailbox" class="infos " placeholder="用来接收订单状态提醒邮件">
+            <div class="payment">
+                <div class="pay1 l-float">
+                    <div class="pay1_l">
+                        <p>订单提交成功，请您尽快付款！订单号：9710852663</p>
+                        <p>请您在提交订单后<em>24</em>小时内完成支付，否则订单会自动取消。</p>
+                    </div>
+                    <div class="pay1_r">
+                        <p>应付金额：<em>148.00元</em></p>
+                        <a href="submitorder.html" target="_black" title="订单详情">订单详情</a>
+                    </div>
+                </div>
+                <div class="pay2">
+                    <div class="ye">
+                        <input type="checkbox" name="daofu" value="">
+                        账号可用余额<em>0</em>
+                    </div>
+                    <div class="yhkzf">
+                        <p class="p1"><input type="checkbox" tabindex="1" name="daofu" value="">银行卡支付</p>
+                        <p class="p2">
+                           <input type="text" class="add_name" name="name" tabindex="2" autocomplete="off" placeholder="请输入银行卡账号进行识别">
+                        </p>
+                        <div class="select_bank">
+                            <ul id="myTab2" class="nav nav-tabs" role="tablist">
+                                <li><a href="#tabs_2" role="tab">网银支付</a></li>
+                            </ul>
+                            <div id="myTabContent2" class="tab-content">
+                                <div class="tab-pane fade in active l-float" id="tabs_1">
+                                    <ul>
+                                        <li><a href="##"><img src="images/bank_01.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_02.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_03.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_04.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_05.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_06.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_03.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_04.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_08.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_01.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a href="##"><img src="images/bank_04.jpg" height="42" width="211" alt=""></a></li>
+                                        <li><a class="more_bank" href="##">更多银行</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </form>
-            </div>
-            <h2 class="order-title">
-                2.确认商品清单
-            </h2>
-            <div class="l-shopcar-info">
-                <table width="1150" class="tit">
-                  <tr>
-                    <th width="84" height="54" align="center" scope="col">
-                    <form id="form1" name="form1" method="post" action="">
-                      <input type="checkbox" name="checkbox" id="checkbox" />
-                      <label for="checkbox"></label>
-                      全选
-                    </form>
-                    </th>
-                    <th width="404" align="center" scope="col">商品</th>
-                    <th width="114" align="center" scope="col">单价（元）</th>
-                    <th width="114" align="center" scope="col">数量</th>
-                    <th width="114" align="center" scope="col">小计（元）</th>
-                    <th width="138" align="center" scope="col">操作</th>
-                  </tr>
-                </table>
-                <table width="1150" class="sp_list">
-                    <tr>
-                        <th width="84" height="160" scope="row">
-                            <a class="shopcar_img" href="" title="">
-                                <img src="word/shoplist3.gif" height="122" width="122" alt="">
-                            </a>
-                        </th>
-                        <td width="350" class="sp_txt">特步男鞋 运动鞋男跑步鞋男款2015新款跑鞋男春夏网布超轻透气慢跑<br />
-                          鞋子 休闲鞋旅游鞋 <br />
-                        荧光绿 42</td>
-                        <td width="114" align="center">148</td>
-                        <td width="114" align="center">
-                            <span id="shuliang" class="Spinner"><a class="Decrease" href="javascript:void(0)"><i>-</i></a><input class="Amount" value="1" autocomplete="off" maxlength="3"><a class="Increase" href="javascript:void(0)"><i>+</i></a></span>
-                        </td>
-                        <td width="114" align="center">148</td>
-                        <td width="138" align="center"><a class="cz" href="" title="">移入收藏夹</a><a class="cz" href="" title="">删除</a></td>
-                      </tr>
-                      <tr>
-                        <th width="84" height="160" scope="row">
-                            <a class="shopcar_img" href="" title="">
-                                <img src="word/shopping (2).jpg" height="122" width="122" alt="">
-                            </a>
-                        </th>
-                        <td width="350" class="sp_txt">特步男鞋 运动鞋男跑步鞋男款2015新款跑鞋男春夏网布超轻透气慢跑<br />
-                          鞋子 休闲鞋旅游鞋 <br />
-                        荧光绿 42</td>
-                        <td width="114" align="center">148</td>
-                        <td width="114" align="center">
-                            <span id="shuliang" class="Spinner"><a class="Decrease" href="javascript:void(0)"><i>-</i></a><input class="Amount" value="1" autocomplete="off" maxlength="3"><a class="Increase" href="javascript:void(0)"><i>+</i></a></span>
-                        </td>
-                        <td width="114" align="center">148</td>
-                        <td width="138" align="center"><a class="cz" href="" title="">移入收藏夹</a><a class="cz" href="" title="">删除</a></td>
-                      </tr>
-                </table>
-                <div class="shoporder-price">
-                    <p>应付金额：<em>￥384.00</em></p>
-                    <p>运费：<em>￥10.00</em></p>
+                        <div class="zf">
+                            <a href="">立即支付</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="shoporder-confirm l-float">
-                    <textarea class="l-left" placeholder="订单留言"></textarea>
-                    <p>最终成交价：<em>￥394.00</em></p>
-                    <p><a href="">确认订单</a></p>
+                <div class="pay3 l-float">
+                    <p><input type="checkbox" tabindex="1" name="daofu" value="">平台支付</p>
+                    <ul>
+                        <li><a href=""><img src="images/weixinzhifu.jpg" height="38" width="153" alt=""></a></li>
+                        <li><a href=""><img src="images/zhifubao.jpg" height="38" width="153" alt=""></a></li>
+                        <li><a href=""><img src="images/yinlianzhifu-.jpg" height="38" width="153" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="pay2 l-float">
+                    <div class="zf">
+                            <a href="">货到付款</a>
+                    </div>
                 </div>
             </div>
-
         </div>
 	</div> <!-- end mian -->
 </div>
