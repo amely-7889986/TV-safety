@@ -73,8 +73,7 @@ $(function() {
 
 
 $(function(){
-
-  $('.video-list-img ul li').hover(function(){
+  $('.l-list5 .smalllist').hover(function(){
     $(this).children('.box').stop(true,true).delay(100).animate({'bottom':0,opacity:1},300);
   },function(){
     $(this).children('.box').stop(true,true).animate({'bottom':-112,opacity:0},200);
