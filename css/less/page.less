@@ -1,0 +1,35 @@
+.l-page{
+  height: 32px;
+  padding: 4px 0;
+  ul{
+    display: block;
+    float: right;
+  }
+  li{
+    float: left;
+    height: 32px;
+    a{
+      display: inline-block;
+      width: 32px;
+      margin: 0 3px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      color: #fff;
+      background: url(../../images/number-bg-nor.png) center no-repeat;
+    }
+    .active, .pc:hover{
+      background: url(../../images/number-bg-hover.png) center no-repeat;
+    }
+    .u-page{
+      width:88px;
+      background: url(../../images/number-prev.png) left center no-repeat;
+      .hide-text();
+    }
+    .u-next{
+      width:88px;
+      background: url(../../images/number-next.png) left center no-repeat;
+      .hide-text();
+    }
+  }
+}
