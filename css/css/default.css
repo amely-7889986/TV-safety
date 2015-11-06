@@ -1,0 +1,451 @@
+/*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+/**
+     * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+     *    Turn off all other ligatures, tabular, lining numerals, and alternates
+     */
+html,
+body {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 1. */
+}
+/* Headings
+    ========================================================================== */
+/**
+     * 1. Turn on discretionary ligatures for larger headings
+     */
+h1,
+h2,
+h3 {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  /* 1. */
+}
+/* Text-level semantics
+    ========================================================================== */
+/**
+     * 1. Change all letters to uppercase
+     * 2. Turn on small caps for upper and lowercase letters
+     */
+abbr {
+  text-transform: uppercase;
+  /* 1 */
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  /* 2 */
+}
+/*
+     * TODO: Turn on diagonal fractions where appropriate
+     */
+time {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
+}
+/*
+     * 1. Turn off kerning and ligatures,
+     *    Turn on lining, tabular numerals, slashed zero
+     */
+pre,
+kbd,
+samp,
+code {
+  font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+/**
+     * 1. Turn on proper supercript numerals
+     */
+sup {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  /* 1. */
+}
+/**
+     * 1. Turn on proper subscript numerals
+     */
+sub {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  /* 1. */
+}
+/* Tables
+    ========================================================================== */
+/**
+     * 1. Turns on tabular, lining numerals and slashed zero
+     *    Turns off kerning, as it could impact tabular numerals
+     */
+table {
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+/**
+     * 1. Revert to defaults for table headings
+     */
+table thead,
+table tfoot {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 2. */
+}
+/* Forms
+    ========================================================================== */
+/**
+     * 1. Turns on lining, proportional numerals without clarified zeroes
+     * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+     */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"] {
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  /* 1. */
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+body {
+  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "wenquanyi micro hei", sans-serif;
+  color: #000;
+  font-size: 14px;
+  background: #FFE501;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+td,
+th {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+textarea::-webkit-input-placeholder {
+  color: #add8e6;
+}
+textarea:-moz-placeholder {
+  color: #add8e6;
+}
+textarea::-moz-placeholder {
+  color: #add8e6;
+}
+textarea:-ms-input-placeholder {
+  color: #add8e6;
+}
+.l-left {
+  float: left;
+}
+.l-right {
+  float: right;
+}
+.l-float {
+  *zoom: 1;
+}
+.l-float:before,
+.l-float:after {
+  display: table;
+  content: "";
+}
+.l-float:after {
+  clear: both;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.mb24 {
+  margin-bottom: 24px;
+}
+.column-nav {
+  background: url(../../images/nav-bg.png) center center repeat-x;
+  color: #ffe400;
+  font-size: 30px;
+  text-align: center;
+  height: 64px;
+  line-height: 64px;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mian {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.m800 {
+  border: #D6D885 solid 1px;
+  background: #FDF592;
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.video-icon {
+  display: block;
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  top: 50%;
+  left: 50%;
+  margin: -18px 0 0 -18px;
+  background: url(../../images/video-small-click.png) center center no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+.l-table-list {
+  margin: 0 auto 12px auto;
+  border: #ddd solid 1px;
+  border-right: none;
+  border-bottom: none;
+}
+.l-table-list th {
+  border-bottom: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+  text-align: center;
+  background: url(../../images/icon-sidebar-bg.jpg) left center repeat-x;
+}
+.l-table-list td {
+  text-align: center;
+  border-bottom: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+}
+.l-table-list td a {
+  text-decoration: none;
+}
+.l-table-list td a:hover {
+  text-decoration: underline;
+}
+.l-table-list td a:hover {
+  color: #7DA70D;
+}
+.l-table-info {
+  margin: 0 auto 12px auto;
+  border: #ddd solid 1px;
+  border-right: none;
+  border-bottom: none;
+}
+.l-table-info th {
+  border-bottom: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+  text-align: center;
+  background: url(../../images/icon-sidebar-bg.jpg) left center repeat-x;
+}
+.l-table-info td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: #ddd solid 1px;
+  border-right: #ddd solid 1px;
+  line-height: 22px;
+}
+.l-table-info td a {
+  text-decoration: none;
+  color: #7DA70D;
+}
+.l-table-info td a:hover {
+  text-decoration: underline;
+}
+.l-page-box {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  height: 40px;
+}
+.l-page-box .l-inner {
+  background: #191919;
+  height: 40px;
+  float: right;
+  margin-right: 8px;
+  padding: 0 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.l-page-box .l-inner li {
+  float: left;
+}
+.l-page-box .l-inner li a,
+.l-page-box .l-inner li span {
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  margin-left: 10px;
+}
+.l-page-box .l-inner li input {
+  width: 40px;
+  margin: 0 6px;
+}
+.l-page-box .l-inner li .go {
+  background: #F7F7F7;
+  display: inline-block;
+  padding: 2px 6px;
+  border: #ddd solid 1px;
+  line-height: 16px;
+  color: #000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
