@@ -1,0 +1,82 @@
+.l-mrg-top {
+  margin-top: 40px;
+}
+.l-videolist {
+  background: #f9f3a5;
+}
+.l-videolist h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  width: 780px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  margin: 6px 10px;
+}
+.l-videolist h2 li a {
+  color: #000;
+  width: 156px;
+  display: block;
+  text-align: center;
+}
+.l-videolist h2 .active {
+  border-bottom: 4px solid #000;
+}
+.l-videolist h2 a:hover {
+  border-bottom: 4px solid #000;
+}
+.mrg-right {
+  margin-right: 26px;
+}
+.l-video {
+  margin: 20px 16px;
+  display: block;
+}
+.l-video .l-video-line {
+  margin-bottom: 42px;
+  display: block;
+}
+.l-video .v-pic {
+  width: 237px;
+  height: 137px;
+}
+.l-video .v-pic span {
+  float: right;
+  position: relative;
+  z-index: 100;
+  top: -22px;
+  left: -4px;
+  width: 44px;
+  height: 16px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+}
+.l-video .videotit {
+  background: #e5ce01;
+  height: 74px;
+  display: block;
+}
+.l-video .videotit span {
+  display: inline-block;
+  margin-top: 8px;
+  line-height: 18px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.l-video .videotit .v-tit {
+  font-size: 14px;
+  font-weight: bold;
+}
+.l-video .videotit .v-describe {
+  font-size: 12px;
+}
+.l-video li {
+  width: 237px;
+  display: inline-block;
+}
