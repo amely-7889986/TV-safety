@@ -1,6 +1,86 @@
 .l-mrg-top{
 	margin-top: 40px;
 }
+.section-v-pic{
+	position: relative;
+	overflow: hidden;
+	width: 800px;
+	height: 318px;
+	.page{
+		width: 800px;
+		height: 318px;
+	}
+	ul li{
+		width: 800px;
+		height: 318px;
+		position: absolute;
+		top: 0;
+		left: 800px;
+	}
+	.controler{
+		position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 800px;
+        height: 54px;
+        background: rgba(0,0,0,0.5);
+        p{
+        	margin: 16px 16px;
+        	font-size: 18px;
+        	color: #fff;
+        	float: left;
+        }
+        b{
+        	display: block;
+            float: right;
+            overflow: hidden;
+
+            width: 10px;
+            height: 10px;
+            margin: 22px 12px;
+
+            cursor: pointer;
+            text-indent: -9999px;
+
+            background: url(../../images/icon-secban-nor.png) center center no-repeat;
+        }
+        b.down{
+            background: url(../../images/icon-secban-hover.png) center center no-repeat;
+        }
+	}
+	.controler2 a{
+		position: absolute;
+        top: 50%;
+
+        display: block;
+
+        width: 42px;
+        height: 42px;
+        margin-top: -46px;
+	}
+	.controler2 a i{
+		display: block;
+
+        width: 42px;
+        height: 42px;
+
+        cursor: pointer;
+	}
+	.controler2 .prev i{
+		background: url(../../images/btn-secban-left.png) center center no-repeat;
+		.opacity(80%);
+	}
+	.controler2 .prev:hover i{
+		.opacity(100%);
+	}
+	.controler2 .next i{
+		 background: url(../../images/btn-secban-right.png) center center no-repeat;
+        .opacity(80%);
+	}
+	.controler2 .next:hover i{
+		.opacity(100%);
+	}
+}
 .l-videolist{
 background:#f9f3a5;
   h2{
@@ -22,9 +102,6 @@ background:#f9f3a5;
 	.active{
 		border-bottom: 4px solid #000;
 	}
-	a:hover{
-		border-bottom: 4px solid #000;
-	}
   }
 }
 .mrg-right{
@@ -33,6 +110,9 @@ background:#f9f3a5;
 .l-video{
 	margin: 20px 16px;
 	display: block;
+	li a{
+		color: #000;
+	}
 	.l-video-line{
 		margin-bottom: 42px;
 		display: block;

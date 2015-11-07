@@ -4726,6 +4726,83 @@ textarea:-ms-input-placeholder {
 .l-mrg-top {
   margin-top: 40px;
 }
+.section-v-pic {
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: 318px;
+}
+.section-v-pic .page {
+  width: 800px;
+  height: 318px;
+}
+.section-v-pic ul li {
+  width: 800px;
+  height: 318px;
+  position: absolute;
+  top: 0;
+  left: 800px;
+}
+.section-v-pic .controler {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 800px;
+  height: 54px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.section-v-pic .controler p {
+  margin: 16px 16px;
+  font-size: 18px;
+  color: #fff;
+  float: left;
+}
+.section-v-pic .controler b {
+  display: block;
+  float: right;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+  margin: 22px 12px;
+  cursor: pointer;
+  text-indent: -9999px;
+  background: url(../../images/icon-secban-nor.png) center center no-repeat;
+}
+.section-v-pic .controler b.down {
+  background: url(../../images/icon-secban-hover.png) center center no-repeat;
+}
+.section-v-pic .controler2 a {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-top: -46px;
+}
+.section-v-pic .controler2 a i {
+  display: block;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.section-v-pic .controler2 .prev i {
+  background: url(../../images/btn-secban-left.png) center center no-repeat;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.section-v-pic .controler2 .prev:hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.section-v-pic .controler2 .next i {
+  background: url(../../images/btn-secban-right.png) center center no-repeat;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.section-v-pic .controler2 .next:hover i {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 .l-videolist {
   background: #f9f3a5;
 }
@@ -4749,15 +4826,15 @@ textarea:-ms-input-placeholder {
 .l-videolist h2 .active {
   border-bottom: 4px solid #000;
 }
-.l-videolist h2 a:hover {
-  border-bottom: 4px solid #000;
-}
 .mrg-right {
   margin-right: 26px;
 }
 .l-video {
   margin: 20px 16px;
   display: block;
+}
+.l-video li a {
+  color: #000;
 }
 .l-video .l-video-line {
   margin-bottom: 42px;
