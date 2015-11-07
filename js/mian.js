@@ -23,7 +23,7 @@ $(function() {
             auto: false,
             interval: 5000 ,
             speed: 500,
-            showNum: 4,
+            showNum: 3,
             stepLen: 1,
             prevElement: $('#video-next'),
             nextElement: $('#video-prev')
@@ -87,3 +87,23 @@ $(function(){
     $(this).children('.box').stop(true,true).animate({'bottom':-68},200);
   })
 })
+
+
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip;
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip;
+   }
+}
+}
