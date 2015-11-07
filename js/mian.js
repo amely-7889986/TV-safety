@@ -23,7 +23,7 @@ $(function() {
             auto: false,
             interval: 5000 ,
             speed: 500,
-            showNum: 4,
+            showNum: 3,
             stepLen: 1,
             prevElement: $('#video-next'),
             nextElement: $('#video-prev')
