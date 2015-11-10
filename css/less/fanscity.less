@@ -66,9 +66,14 @@
       position: relative;
       width: 196px;
       height: 153px;
+      &:hover{
+        .play{
+          display: block;
+        }
+      }
       .play{
+        display: none;
         position: absolute;
-        display: inline-block;
         top: 50%;
         left: 50%;
         margin: -23px 0 0 -23px;
@@ -166,7 +171,7 @@
 
 .l-groupFind-info{
   padding:34px 44px;
-  background: url(../../images/icon-groupFind-hot.jpg) 45px 135px no-repeat
+  background: url(../../images/icon-groupFind-hot.jpg) 54px 138px no-repeat
 }
 .l-groupFind-list{
   width: 720px;
