@@ -11,29 +11,34 @@
     }
 }
 .l-header{
-    background: #fff;
+    background: url(../../images/nav-bg.png);
     .clearfix();
+    .centered-line(64px);
     .est-layout-page(1200px);
     li{
         float: left;
-        width: 200px;
-        font-size: 15px;
+        width: 400px;
+        font-size: 30px;
+        .br{
+            border-right: #9c8c0b solid 1px;
+        }
         a{
             display: inline-block;
-            width: 200px;
-            color: #000;
+            width: 400px;
+            color: #fff;
             font-weight: 600;
             text-align: center;
-            .centered-line(38px);
+            .centered-line(42px);
             &:hover{
-                background: #000;
                 color: #FFE501;
             }
         }
-        a.active {
-          background: #000;
-          color: #FFE501;
-        }
+    }
+    .active {
+          background: url(../../images/icon-navbg-hover.png) center center no-repeat;
+          a{
+            color: #FFE501 !important;
+          }
     }
 }
 .u-logo{

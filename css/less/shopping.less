@@ -1,34 +1,46 @@
 .l-shopping{
-	width: 169px;
+	width: 190px;
 	height: auto;
 	padding: 0;
 }
 .u-shopping{
 	text-align: center;
-	margin-bottom: 16px;
 	.title{
 		display: block;
-		width: 169px;
-		height: 105px;
-		background: url(../../images/side-right-tit.png) center center no-repeat;
-		.hide-text();
+		width: 190px;
+		height: 64px;
+		line-height: 64px;
+		background: url(../../images/nav-bg.png) center center repeat-x;
+		font-size: 30px;
+		text-align: center;
+	}
+}
+#u-weixin{
+	margin-bottom: 12px;
+	a{
+		display: inline-block;
+		width: 190px;
+		img{
+			max-width: 100% !important;
+		}
 	}
 }
 .u-shopping-box{
-	width: 169px;
-	height: 868px;
+	width: 190px;
+	height: 792px;
 	overflow:hidden;
+  .box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 .shopping-prev{
 	display: block;
-	width: 169px;
+	width: 190px;
 	height: 24px;
 	background: url(../../images/side-right-prev.png) center center no-repeat;
 	.hide-text();
 }
 .shopping-next{
 	display: block;
-	width: 169px;
+	width: 190px;
 	height: 24px;
 	background: url(../../images/side-right-next.png) center center no-repeat;
 	.hide-text();
@@ -38,12 +50,12 @@
 	padding-top: 22px;
 	overflow:hidden;
 	li{
-		height: 264px;
+		height: auto;
 	}
 	.img{
 		position: relative;
-		width: 169px;
-		height: 169px;
+		width: 190px;
+		height: 190px;
 		overflow:hidden;
 	}
 	.jiathis{
@@ -54,18 +66,14 @@
 	}
 	.text{
 		padding: 8px 4px;
-		background: #30B8EE;
+		background: #000;
 		p{
 			color: #fff;
 		}
 		.tit{
-			font-size: 16px;
-			line-height: 20px;
-			.ellipsis();
-		}
-		.intro{
-			line-height: 20px;
-			.ellipsis(2);
+			font-size: 20px;
+			text-align: center;
+			.ellipsis()
 		}
 	}
 }

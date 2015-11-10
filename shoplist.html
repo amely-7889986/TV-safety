@@ -80,12 +80,15 @@
     </div>
     <div class="l-header">
     	<ul>
-    		<li><a href="programmes.html">节目介绍</a></li>
-    		<li><a href="makingfilm.html">节目花絮</a></li>
-    		<li><a href="signin.html">会员签到</a></li>
-    		<li><a href="starinteraction.html">明星互动</a></li>
-    		<li><a href="">网页小游戏</a></li>
-    		<li><a href="collaboration.html">其他商业合作</a></li>
+    		<li>
+          <a class="br" href="">粉丝大爆炸</a>
+        </li>
+        <li>
+          <a class="br" href="">安全总动员</a>
+        </li>
+        <li>
+          <a href="">安全商城</a>
+        </li>
     	</ul>
     </div>
 	<div class="mian l-float voide-msg-bg">
@@ -941,25 +944,5 @@
 		defaultPlay:false,
 		returnDefault:true
 	});
-</script>
-<script type="text/javascript">
-function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
-var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
-var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
-var openTip = oOpenTip || "";
-var shutTip = oShutTip || "";
-if(targetObj.style.display!="none"){
-   if(shutAble) return;
-   targetObj.style.display="none";
-   if(openTip  &&  shutTip){
-    sourceObj.innerHTML = shutTip;
-   }
-} else {
-   targetObj.style.display="block";
-   if(openTip  &&  shutTip){
-    sourceObj.innerHTML = openTip;
-   }
-}
-}
 </script>
 </html>
