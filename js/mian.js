@@ -99,6 +99,15 @@ $(function(){
   })
 })
 
+$(function(){
+
+  $('#u-weixin').hover(function(){
+    $(this).children('.box').stop(true,true).delay(100).animate({'bottom':0,opacity:1},300);
+  },function(){
+    $(this).children('.box').stop(true,true).animate({'bottom':-188},200);
+  })
+})
+
  $(document).ready(function() {
 
       //Default Action
