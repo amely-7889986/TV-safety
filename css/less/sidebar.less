@@ -2,8 +2,8 @@
 {
     position: relative;
     width: 1190px;
-    margin: 15px auto 15px auto;
-    height: 475px;
+    margin: 0 auto;
+    height: 455px;
     overflow: hidden;
 }
 #nav
@@ -11,44 +11,43 @@
     position: relative;
     z-index: 1;
     top: 0;
-    height: 475px;
-    width: 190px;
+    height: 448px;
+    width: 198px;
 
-    border-bottom: 1px #d65c00 solid;
-    background: #f25600;
+    border-bottom: 1px #f39800 solid;
+    background: #f39800;
     box-shadow: 5px 5px 10px rgba(0,0,0,.4);
 }
 
 #nav .mod_cate_hd
 {
     font-family: 'Microsoft Yahei';
-    font-size: 16px;
+    font-size: 17px;
     line-height: 40px;
 
     height: 40px;
 
-    text-indent: 7px;
+    text-indent: 20px;
 
     color: #fff;
-    border-bottom: 2px #d65c00 solid;
-    background-color: #d65c00;
+    border-bottom: 2px #db8902 solid;
+    background-color: #db8902;
 }
 #nav .mod_cate,
 #nav .mod_cate2
 {
-    height: 24px;
-    padding: 5px 10px;
-
-    border-top: 1px #d65c00 solid;
-    border-bottom: 1px #d65c00 solid;
+    height: 40px;
+    padding: 5px 20px;
+    line-height: 40px;
+    margin-top: 26px;
 }
 #nav .mod_cate h2,
 #nav .mod_cate2 h2
 {
     font-family: 'Microsoft Yahei';
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 40px;
 }
 #nav .mod_cate h2 a,
 #nav .mod_cate2 h2 a
@@ -83,104 +82,54 @@
 {
     position: absolute;
     z-index: -1;
-    top: 0;
-    left: 188px;
-
+    top: 68px;
+    left: 198px;
     display: none;
     overflow-x: hidden;
     overflow-y: auto;
-
-    width: 574px;
-    height: 471px;
-
-    border: 2px #d65c00 solid;
-    background: #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+    width: 142px;
+    height: 350px;
+    border: 2px #000000 solid;
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 
 #nav .mod_subcate_main
 {
     float: left;
 
-    width: 530px;
+    width: 144px;
     margin-bottom: -1000px;
-    padding: 0 20px 10px 20px;
+    dt{
+        text-indent: 16px;
+    }
+    a{
+        display: block;
+        padding-left: 14px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 30px;
+        &:hover{
+            color: #ffe501;
+            background:#000;
+        }
+    }
 }
-#nav .mod_subcate_line
-{
-    font-size: 0;
 
-    display: block;
-    clear: both;
-    overflow: hidden;
 
-    width: 100%;
-    height: 1px;
-    margin-bottom: 5px;
-
-    border-top: 5px #fff solid;
-    border-bottom: 1px #dadada dotted;
-}
-#nav .mod_subcate_main dl
-{
-    overflow: hidden;
-
-    padding: 7px 0 7px 65px;
-
-    border-bottom: 1px #e5e5e5 solid;
-}
-#nav .mod_subcate_main dl dt
-{
-    font-size: 12px;
-    font-weight: 700;
-    font-style: normal;
-    font-variant: normal;
-    font-size-adjust: none;
-    font-stretch: normal; 
-    line-height: 22px;
-
-    float: left;
-
-    width: 65px;
-    margin-left: -65px;
-
-    color: #f25600;
-}
-#nav .mod_subcate_main dl dd
-{
-    line-height: 22px;
-
-    overflow: hidden;
-}
-#nav .mod_subcate_main dl dd a
-{
-    font-size: 12px;
-
-    display: inline;
-    float: left;
-
-    margin: 0 5px 0 5px;
-
-    white-space: nowrap;
-
-    color: #666;
-}
-#nav .mod_subcate_main dl dd a.org
-{
-    color: #ff7300;
-}
 #nav .on
 {
-    padding: 5px 10px;
+    padding: 5px 20px;
 
-    border-top: 1px #d65c00 solid;
-    border-bottom: 1px #d65c00 solid;
-    border-left: 2px #d65c00 solid;
-    background: #fff;
+    // border-top: 1px #d65c00 solid;
+    // border-bottom: 1px #d65c00 solid;
+    // border-left: 2px #d65c00 solid;
+    background: #000;
+    color: #ffe501;
 }
 #nav .on h2 a
 {
-    color: #333;
+    color: #ffe501;
 }
 #nav .on .mod_subcate
 {
@@ -199,16 +148,15 @@
 {
     position: absolute;
     top: 0;
-    left: 200px;
-
+    right: 0;
     overflow: hidden;
 
-    width: 990px;
-    height:476px;
+    width: 986px;
+    height:448px;
     .s-banner
     {
-        width: 990px !important;
-        height:476px !important;
+        width: 986px !important;
+        height:448px !important;
     }
 }
 
