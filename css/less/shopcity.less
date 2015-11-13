@@ -33,3 +33,90 @@
     }
   }
 }
+
+
+// 列表模块
+.l-shopcity-f1{
+}
+.u-shopcity-adb{
+  width:394px;
+  height: 570px;
+  &:hover .shopcity-prev,&:hover .shopcity-next {
+  .opacity(100%);
+  }
+}
+.shopcity-prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -31px;
+    z-index: 1;
+    display: block;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: simsun;
+    .opacity(20%);
+    .rgba-background(#000,40%);
+}
+.shopcity-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -31px;
+    z-index: 1;
+    display: block;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: simsun;
+    .opacity(20%);
+    .rgba-background(#000,40%);
+}
+.u-shopcity-marquee{
+  width:394px;
+  height: 570px;
+  overflow: hidden;
+  li{
+    img{
+      width: 394px;
+      height: 570px;
+    }
+  }
+}
+.u-shopcity-ads{
+  width: 262px;
+  height: 570px;
+  overflow: hidden;
+  .imgbox{
+    width: 262px;
+    height: 282px;
+    overflow: hidden;
+  }
+  .abox{
+    display: block;
+    width: 262px;
+    height: 282px;
+  }
+  .popupbox{
+    position: absolute;
+    bottom: -282px;
+    left: 0;
+    width: 100%;
+    height: 182px;
+    padding-top: 100px;
+    .rgba-background(#ffe501,70%);
+    .name,.abstract{
+      color: #000;
+      line-height: 24px;
+    }
+  }
+}

@@ -64,6 +64,64 @@ $(function() {
             nextElement: $('#slider-prev')
         });
     });
+// shopcity marquee
+
+$(function() {
+        $('#u-shopcity-marquee1').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 1,
+            stepLen: 1,
+            prevElement: $('#shopcity-next1'),
+            nextElement: $('#shopcity-prev1')
+        });
+    });
+$(function() {
+        $('#u-shopcity-marquee2').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 1,
+            stepLen: 1,
+            prevElement: $('#shopcity-next2'),
+            nextElement: $('#shopcity-prev2')
+        });
+    });
+$(function() {
+        $('#u-shopcity-marquee3').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 1,
+            stepLen: 1,
+            prevElement: $('#shopcity-next3'),
+            nextElement: $('#shopcity-prev3')
+        });
+    });
+$(function() {
+        $('#u-shopcity-marquee4').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 1,
+            stepLen: 1,
+            prevElement: $('#shopcity-next4'),
+            nextElement: $('#shopcity-prev4')
+        });
+    });
+
+$(function() {
+        $('#m-content').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 6,
+            stepLen: 1,
+            prevElement: $('#content-next'),
+            nextElement: $('#content-prev')
+        });
+    });
 // tab
 $(function() {
   function tabs(tabTit, on, tabCon) {
@@ -81,8 +139,6 @@ $(function() {
   }
   tabs(".tab-hd-h", "active", ".tab-bd-h");
 });
-
-
 $(function(){
   $('.l-list5 .smalllist').hover(function(){
     $(this).children('.box').stop(true,true).delay(100).animate({'bottom':0,opacity:1},300);
@@ -107,6 +163,14 @@ $(function(){
     $(this).children('.box').stop(true,true).animate({'bottom':-188},200);
   })
 })
+$(function(){
+
+  $('.abox').hover(function(){
+    $(this).children('.popupbox').stop(true,true).delay(100).animate({'bottom':0,opacity:1},300);
+  },function(){
+    $(this).children('.popupbox').stop(true,true).animate({'bottom':-282},200);
+  })
+})
 
  $(document).ready(function() {
 
@@ -114,7 +178,6 @@ $(function(){
       $(".tab_content").hide(); //Hide all content
       $("ul.tabs li:first").addClass("active").show(); //Activate first tab
       $(".tab_content:first").show(); //Show first tab content
-
       //On Click Event
       $("ul.tabs li").click(function() {
         $("ul.tabs li").removeClass("active"); //Remove any "active" class

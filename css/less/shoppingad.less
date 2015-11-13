@@ -128,37 +128,15 @@
 
 .l-guessyou-box{
 	margin-bottom: 12px;
-	.est-layout-page(1190px);
-	.title{
-		height: 36px;
-		h2{
-			float: left;
-			display: inline;
-			line-height: 30px;
-			font-size: 20px;
-			color: #333;
-			padding-right: 228px;
-			background: url(../../images/l-guessyou-tit.png) 85px 10px no-repeat ;
-		}
-		a{
-		float: right;
-		display: inline;
-		height: 18px;
-		line-height: 18px;
-		padding-right: 25px;
-		margin-top: 8px;
-		background: url(../../images/l-guessyou-r.jpg) 46px 0 no-repeat;
-		&:hover{
-			color: #C81623;
-			background: url(../../images/l-guessyou-r.jpg) 46px -24px no-repeat;
-		}
-		}
-	}
+	.est-layout-page(1200px);
 	.m-content{
-		height: 232px;
-		border: 1px solid #d1d1d1;
+		height: 240px !important;
 		border-top: 0;
 		overflow: visible;
+		padding-top: 20px
+	}
+	.l-content-marquee{
+		height: 260px;
 	}
 	.spacer{
 		position: relative;
@@ -186,7 +164,7 @@
 		}
 	}
 	ul{
-		height: 210px;
+		height: 220px;
 		padding-top: 20px;
 		overflow: hidden;
 	}
@@ -198,11 +176,29 @@
 	}
 	.p-img {
 		text-align: center;
-		margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 10px auto 24px auto;
+    img{
+    	width: 100px !important;
+    	height: 100px !important;
+    }
+    &:hover{
+		-webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    -webkit-transform: scale(1.14);
+    -moz-transform: scale(1.14);
+    -ms-transform: scale(1.14);
+    -o-transform: scale(1.14);
+    transform: scale(1.14);
+    }
 	}
 	.p-info {
 	  padding: 0 32px;
-	  border-left: 1px solid #666666;
 	  overflow: hidden;
 	}
 	.p-info1{
@@ -223,6 +219,7 @@
 	  	color: #b51d1a;
 	  	font-size: 18px;
 	  	overflow: hidden;
+	  	text-align: center;
 	  	i{
 	  		font: 14px Arial,Verdana,"\5b8b\4f53";
 	  	}
