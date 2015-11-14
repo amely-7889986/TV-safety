@@ -171,6 +171,13 @@ $(function(){
     $(this).children('.popupbox').stop(true,true).animate({'bottom':-282},200);
   })
 })
+//图片延时加载
+$(function() {
+$(".load-img img").lazyload({
+  placeholder : "img/grey.gif",
+  effect : "fadeIn"
+});
+});
 
  $(document).ready(function() {
 
