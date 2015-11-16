@@ -171,10 +171,9 @@ $(function(){
     $(this).children('.popupbox').stop(true,true).animate({'bottom':-282},200);
   })
 })
-
+//图片延时加载
 $(function() {
   $(".lazyload img").lazyload({
-    placeholder : "images/loading-0.gif",
     effect : "fadeIn"
   });
 });
