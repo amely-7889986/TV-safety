@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>电视台安全总动员</title>
-  <meta name="keywords" content='播客,视频,视频下载,视频搜索,电影视频,电视剧视频,综艺视频,游戏视频,舞蹈视频,在线视频免费视频,自拍,视频教学,网络视频,搞笑视频,视频短片'/>
-  <meta name="description" content='是你会喜欢的个人视频网站，免费无限空间，上传你的视频，观看和搜索海量视频节目，收藏你喜欢的视频，订阅你关注的播客，简单方便地分享给你的朋友们。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。' />
+  <title>安全总动员</title>
+  <meta name="keywords" content=''/>
+  <meta name="description" content='' />
   <link rel="stylesheet" href="css/css/mian.css">
   <link href="css/css.css" rel="stylesheet" type="text/css" />
   <link rel="bookmark" href="images/favicon.ico" type="image/x-icon">
@@ -22,16 +22,6 @@
   <style type="text/css">
   .muma{
     background:url(images/f-videoplay-bg.png) center no-repeat;
-  }
-  .genduoshiping{
-    display: block;
-    position: absolute;
-    bottom: 30px;
-    right: 40px;
-    width: 68px;
-    height: 22px;
-    z-index: 9999;
-    background: url(images/genduoshipin.gif) center no-repeat;
   }
   </style>
 </head>
@@ -164,7 +154,32 @@
       <div class="l-middle-box l-left">
         <div class="l-safety-big l-float">
           <h2 class="column-nav"><a class="fc-h " href="">粉丝城粉丝海选主页面</a></h2>
-            <iframe scrolling="no"  allowtransparency="true" class="" frameborder="0" src="Features/haixuan.html" style="width:800px;height:1522px;"></iframe>
+            <div class="l-audition-iframe">
+              <table id="__01" width="801" height="1345" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <img style="height:100%; border-style:none;" src="Features/images/haixuan_01.png" alt="" width="801" height="336" usemap="#Map" border="0"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img style="height:100%; border-style:none;" src="Features/images/haixuan_02.png" width="801" height="337" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img style="height:100%; border-style:none;" src="Features/images/haixuan_03.png" width="801" height="336" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img style="height:100%; border-style:none;" src="Features/images/haixuan_04.png" alt="" width="801" height="336" usemap="#Map2" border="0"></td>
+                </tr>
+              </table>
+              <map name="Map">
+                <area shape="rect" coords="334,130,474,172" href="baoming.html">
+              </map>
+              <map name="Map2">
+                <area class="popup-hx" shape="rect" coords="296,53,512,108" href="javascript:void()">
+              </map>
+            </div>
             <div style="margin-top: 20px;">
               <h2 class="column-nav"><a class="fc-h " href="">精彩演播室</a></h2>
               <div class="muma posr">
@@ -329,14 +344,22 @@
     <script src="js/banner.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/carousel.js" type="text/javascript"></script>
     <script src="js/mian.js" type="text/javascript" charset="utf-8"></script>
-
+    <script src="js/layer.js" type="text/javascript" charset="utf-8"></script><!-- popup -->
     <script type="text/javascript">
-      $(".l-groupFind-list li:nth-child(3n)").css("border","none");
-    </script>
-    <script type="text/javascript">
-      $(function(){
-      Carousel.init($(".J_Poster"));
+      $('.popup-hx').on('click', function(){
+          layer.open({
+              type: 2,
+              skin: 'layui-my',
+              title: '活动声明',
+              maxmin: false,
+              shade: 0.3,
+              scrollbar: false,
+              shadeClose: true, //点击遮罩关闭层
+              area : ['660px' , '266px'],
+              content: 'Features/huodasm.html',
+              scrollbar: false
+          });
       });
-    </script>
+      </script>
   </html>
 

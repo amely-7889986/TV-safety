@@ -112,16 +112,16 @@ $(function() {
     });
 
 $(function() {
-        $('#m-content').marquee({
-            auto: false,
-            interval: 5000 ,
-            speed: 500,
-            showNum: 6,
-            stepLen: 1,
-            prevElement: $('#content-next'),
-            nextElement: $('#content-prev')
-        });
+    $('#m-content').marquee({
+        auto: false,
+        interval: 5000 ,
+        speed: 500,
+        showNum: 6,
+        stepLen: 1,
+        prevElement: $('#content-next'),
+        nextElement: $('#content-prev')
     });
+});
 // tab
 $(function() {
   function tabs(tabTit, on, tabCon) {
@@ -171,14 +171,6 @@ $(function(){
     $(this).children('.popupbox').stop(true,true).animate({'bottom':-282},200);
   })
 })
-//图片延时加载
-$(function() {
-  $(".lazyload img").lazyload({
-    effect : "fadeIn"
-  });
-});
-
-
 function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
 var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
 var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;

@@ -7,7 +7,6 @@
   <meta name="keywords" content='播客,视频,视频下载,视频搜索,电影视频,电视剧视频,综艺视频,游戏视频,舞蹈视频,在线视频免费视频,自拍,视频教学,网络视频,搞笑视频,视频短片'/>
   <meta name="description" content='是你会喜欢的个人视频网站，免费无限空间，上传你的视频，观看和搜索海量视频节目，收藏你喜欢的视频，订阅你关注的播客，简单方便地分享给你的朋友们。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。' />
   <link rel="stylesheet" href="css/css/mian.css">
-  <link href="css/css.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/wangEditor-1.3.10.css">
   <link rel="bookmark" href="images/favicon.ico" type="image/x-icon">
   <!--[if lte IE 6]>
@@ -142,9 +141,41 @@
       </div>
       <!-- end l-fans-bbs -->
       <div class="l-middle-box l-left l-safetyQuestion" style="background: #ffe501;">
-        <iframe scrolling="no"  allowtransparency="true" class="" frameborder="0" src="Features/egao.html" style="width:798px;height:1893px;"></iframe>
+        <div class="l-kuso-iframe">
+          <table id="__01" width="800" height="1893" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <img src="Features/images/egao1_01.png" style="height:100%; border-style:none;" width="800" height="316" alt=""></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Features/images/egao1_02.png" style="height:100%; border-style:none;" width="800" height="315" alt=""></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Features/images/egao1_03.png" style="height:100%; border-style:none;" alt="" width="800" height="316" usemap="#Map" border="0"></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Features/images/egao1_04.png" style="height:100%; border-style:none;" width="800" height="315" alt=""></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Features/images/egao1_05.png" style="height:100%; border-style:none;" width="800" height="316" alt=""></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="Features/images/egao1_06.png" style="height:100%; border-style:none;" width="800" height="315" alt=""></td>
+            </tr>
+          </table>
+          <!-- End Save for Web Slices -->
+          <map name="Map">
+            <area class="popup-sm" shape="rect" coords="583,93,693,127" href="javascript:void()">
+            <area  shape="rect" coords="255,45,295,61" href="">
+          </map>
+        </div>
         <div class="l-kuso-box posr">
-          <a href="" class="u-bnt-shangc">上传作品</a>
+          <a href="javascript:void:(0)" class="u-bnt-shangc popup-sc">上传作品</a>
           <div class="l-kuso-tab">
             <ul class="tab-hd-new tab-hd-h l-kuso-tit"><li><a  class="f1" href="javascript:void:(0)">全部作品</a></li><li><a class="f2" href="javascript:void:(0)">热度排行</a></li><li><a class="f3" href="javascript:void:(0)">我的作品</a></li></ul>
           </div>
@@ -536,5 +567,38 @@
     <script src="js/mian.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
     $(".item .l-kuso-list:nth-child(3n)").css("marginRight","0");
-</script>
-  </html>
+    </script>
+    <script src="js/layer.js" type="text/javascript" charset="utf-8"></script><!-- popup -->
+    <script type="text/javascript">
+      $('.popup-sm').on('click', function(){
+          layer.open({
+              type: 2,
+              skin: 'layui-my',
+              title: '活动声明',
+              maxmin: false,
+              shade: 0.3,
+              scrollbar: false,
+              shadeClose: true, //点击遮罩关闭层
+              area : ['660px' , '266px'],
+              content: 'Features/huodasm.html',
+              scrollbar: false
+          });
+      });
+      </script>
+      <script type="text/javascript">
+        $('.popup-sc').on('click', function(){
+            layer.open({
+                type: 2,
+                skin: 'layui-my',
+                title: '上传作品',
+                maxmin: false,
+                shade: 0.3,
+                scrollbar: false,
+                shadeClose: true, //点击遮罩关闭层
+                area : ['578px' , '510px'],
+                content: 'Features/updateWork.html',
+                scrollbar: false
+            });
+        });
+      </script>
+</html>

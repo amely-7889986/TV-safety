@@ -551,6 +551,12 @@
 <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
     $(".l-listsrp-itemlist .shop-list-box:nth-child(3n)").css("marginRight","0");
+    //图片延时加载
+		$(function() {
+		  $(".lazyload img").lazyload({
+		    effect : "fadeIn"
+		  });
+		});
 </script>
 <script type="text/javascript" src="http://v1.jiathis.com/code/jia.js" charset="utf-8"></script>
 
