@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>上传作品</title>
+  <link rel="stylesheet" href="../css/css/mian.css">
+  <style>
+  .updateWork{
+    margin-left: 18px;
+    padding: 20px 0;
+  }
+  .updateWork .title{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .updateWork .pd10{
+    padding: 10px 0;
+  }
+  .inptit{
+    width: 240px;
+    border: solid 1px #000;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background: #fff;
+    text-indent: 6px;
+  }
+  .abnt-box{
+  display: inline-block;padding: 10px 40px;background: #000;color: #fff;font-size: 20px;font-weight: bold;border-radius: 5px;margin: 0 5px;
+  }
+  .file-bnt{
+  width: 160px;height: 40px;position: absolute;left: 0;top: 0;opacity: 0;cursor: pointer;background: none;
+  }
+
+  </style>
+</head>
+<body style="background: #ffe501;">
+  <table width="466" align="center" class="updateWork">
+    <tbody>
+      <tr>
+        <th class="textc" height="48" colspan="2" scope="col" align="center" style="
+    text-indent: 92px;
+">
+          <img src="../images/icon-updateWork.png" width="225" alt=""></th>
+      </tr>
+      <tr>
+        <td class="title pd10 textr" width="159" height="46" align="right">标题：</td>
+        <td class="textl" width="295">
+          <input class="inptit" type="text" placeholder="二字以上，八字以内"></td>
+      </tr>
+      <tr>
+        <td class="title textr posr" height="116" align="right" valign="top">
+          <span style="position: absolute;top: 0;left: 102px;display: inline-block;">描述：</span>
+        </td>
+        <td class="textl">
+          <textarea name="textarea" id="" cols="30" rows="10" style="width: 237px;border: none;height: 116px;border-radius: 5px;"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td class="textc" height="46" colspan="2" align="center" style="padding-left: 70px;padding-top: 14px;">
+          <a class="posr abnt-box">选择图片<input class="file-bnt" type="file"></a>
+          <a class="posr abnt-box">选择视频<input class="file-bnt" type="file"></a>
+        </td>
+      </tr>
+      <tr>
+        <td class="textc fontz12" height="70" colspan="2" align="center" style="padding-left: 84px;line-height: 18px;">
+          <p>
+            温馨提示：
+            <br>
+            1.图片上传大小不得超过2M，支持图片格式jpg、png、gif
+            <br>2.视频上传大小不得超过8M，支持视频格式mp4、flv等常用格式</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="textc" height="46" colspan="2" align="center" style="padding-left: 74px;"><a class="posr abnt-box" href="">提交</a>
+        </td>
+      </tr>
+      <tr style="display: none;">
+        <td width="166" align="center" style="padding: 10px 5px;">
+          <img src="../word/voide-list01.jpg" width="100" alt="">
+        </td>
+        <td class="fontz18 fwb" width="166" align="center">这是视频名称</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
