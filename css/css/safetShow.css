@@ -1,0 +1,47 @@
+.l-safetShow-box {
+  width: 800px;
+  height: 1888px;
+  background: url(../../images/safetyShow-bg.png) top center no-repeat;
+  background-size: 100%;
+  padding-top: 98px;
+}
+.l-safetShow-box .ad1 {
+  margin-bottom: 115px;
+}
+.l-safetShow-box .ad2 {
+  margin-bottom: 130px;
+}
+.l-safetShow-ad {
+  position: relative;
+  width: 794px;
+  height: 406px;
+  margin: 0 auto;
+}
+.l-safetShow-ad .u-wk {
+  position: absolute;
+  width: 794px;
+  height: 406px;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  background: url(../../images/icon-safetShow-wk.png) top center no-repeat;
+}
+.l-safetShow-ad .u-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 794px;
+  height: 406px;
+  z-index: 99;
+}
+.l-safetShow-ad .u-img img {
+  max-width: 100%;
+}
+.l-safetShow-text {
+  padding: 160px 80px;
+}
+.l-safetShow-text p {
+  line-height: 28px;
+}

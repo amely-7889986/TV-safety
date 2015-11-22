@@ -1,0 +1,122 @@
+.l-warpper-box {
+  position: relative;
+  width: 1190px;
+  margin: 0 auto;
+  height: 455px;
+  overflow: hidden;
+}
+#nav {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  height: 448px;
+  width: 198px;
+  border-bottom: 1px #f39800 solid;
+  background: #f39800;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+#nav .mod_cate_hd {
+  font-family: 'Microsoft Yahei';
+  font-size: 17px;
+  line-height: 40px;
+  height: 40px;
+  text-indent: 20px;
+  color: #fff;
+  border-bottom: 2px #db8902 solid;
+  background-color: #db8902;
+}
+#nav .mod_cate,
+#nav .mod_cate2 {
+  height: 40px;
+  padding: 5px 20px;
+  line-height: 40px;
+  margin-top: 26px;
+}
+#nav .mod_cate h2,
+#nav .mod_cate2 h2 {
+  font-family: 'Microsoft Yahei';
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 40px;
+}
+#nav .mod_cate h2 a,
+#nav .mod_cate2 h2 a {
+  padding-right: 5px;
+  color: #fff;
+}
+#nav .mod_cate_r {
+  font-style: normal;
+  font-variant: normal;
+  line-height: 24px;
+}
+#nav .mod_cate_r a {
+  font-size: 12px;
+  padding-right: 5px;
+  color: #c2d9f8;
+}
+#nav .mod_cate2 {
+  background: none;
+}
+#nav .mod_cate2 a.yel {
+  color: #fee602;
+}
+#nav .mod_subcate {
+  position: absolute;
+  z-index: -1;
+  top: 68px;
+  left: 198px;
+  display: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 142px;
+  height: 350px;
+  border: 2px #000000 solid;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+#nav .mod_subcate_main {
+  float: left;
+  width: 144px;
+  margin-bottom: -1000px;
+}
+#nav .mod_subcate_main a {
+  display: block;
+  padding-left: 14px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+#nav .mod_subcate_main a:hover {
+  color: #ffe501;
+  background: #000;
+}
+#nav .on {
+  padding: 5px 20px;
+  background: #000;
+  color: #ffe501;
+}
+#nav .on h2 a {
+  color: #ffe501;
+}
+#nav .on .mod_subcate {
+  display: block !important;
+  /* !important 强制显示，否则会闪烁*/
+}
+#nav .on .mod_cate_r a {
+  color: #666;
+}
+#nav .on a.hot_sub {
+  color: #fff;
+}
+.l-shop-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 986px;
+  height: 448px;
+}
+.l-shop-banner .s-banner {
+  width: 986px !important;
+  height: 448px !important;
+}

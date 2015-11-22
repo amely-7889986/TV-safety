@@ -1,0 +1,52 @@
+.l-middle-box {
+  width: 800px;
+  height: auto;
+  margin-left: 10px;
+}
+.l-safety-big {
+  width: 800px;
+  margin-bottom: 22px;
+}
+.l-list5 {
+  display: block;
+  width: 800px;
+  height: 341px;
+  overflow: hidden;
+}
+.l-list5 li {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.l-list5 .mr {
+  margin-right: 5px;
+}
+.l-list5 .ml0 {
+  margin-left: 5px;
+}
+.l-list5 .textbg {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 14px 10px;
+  width: 329px;
+}
+.l-list5 .textbg h3 {
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.l-list5 .textbg p {
+  text-align: right;
+  color: #fff;
+}
+.l-list5 .biglist {
+  width: 349px;
+  height: 341px;
+}
+.l-list5 .smalllist {
+  width: 220px;
+  height: 168px;
+}

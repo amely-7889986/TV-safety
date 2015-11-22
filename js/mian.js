@@ -23,7 +23,7 @@ $(function() {
             auto: false,
             interval: 5000 ,
             speed: 500,
-            showNum: 3,
+            showNum: 5,
             stepLen: 1,
             prevElement: $('#video-next'),
             nextElement: $('#video-prev')
@@ -62,6 +62,17 @@ $(function() {
             stepLen: 4,
             prevElement: $('#slider-next'),
             nextElement: $('#slider-prev')
+        });
+    });
+$(function() {
+        $('#videolist-marquee').marquee({
+            auto: false,
+            interval: 5000 ,
+            speed: 500,
+            showNum: 12,
+            stepLen: 1,
+            prevElement: $('#videolist-next'),
+            nextElement: $('#videolist-prev')
         });
     });
 // shopcity marquee
