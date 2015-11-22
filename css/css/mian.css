@@ -1611,22 +1611,38 @@ textarea:-ms-input-placeholder {
 .l-fooder-mian {
   position: relative;
   padding: 34px 140px;
-  width: 920px;
+  width: 1050px;
   margin-right: auto;
   margin-left: auto;
 }
 .l-fooder-mian .fooder-logo {
-  width: 200px;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+}
+.l-fooder-mian .fooder-logo span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 26px;
+  color: #fff;
+  width: 150px;
 }
 .l-fooder-mian a {
   color: #C5C5C5;
 }
 .l-fooder-mian .fooder-link {
-  width: 720px;
+  width: 600px;
+}
+.l-fooder-mian .fooder-link h2 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
 }
 .l-fooder-mian .fooder-link li {
   float: left;
-  width: 134px;
+  width: 120px;
 }
 .l-fooder-mian .fooder-link a {
   display: block;
@@ -1638,12 +1654,13 @@ textarea:-ms-input-placeholder {
 .copyright {
   padding: 20px 0;
   height: 100px;
-  width: 920px;
+  width: 580px;
   margin-right: auto;
   margin-left: auto;
 }
 .copyright .l-left {
-  width: 320px;
+  width: 580px;
+  float: right;
 }
 .copyright p {
   color: #C5C5C5;
