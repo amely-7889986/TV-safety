@@ -1608,17 +1608,26 @@ textarea:-ms-input-placeholder {
   font-size: 18px;
   color: #fff;
 }
+.f-left {
+  width: 454px;
+  display: block;
+  border-right: 1px solid #fff;
+}
+.f-right {
+  width: 625px;
+  display: block;
+  margin-left: 20px;
+}
 .l-fooder-mian {
   position: relative;
-  padding: 34px 140px;
-  width: 1050px;
+  padding: 34px 124px;
+  width: 1100px;
   margin-right: auto;
   margin-left: auto;
 }
 .l-fooder-mian .fooder-logo {
   width: 150px;
   text-align: center;
-  margin-top: 30px;
 }
 .l-fooder-mian .fooder-logo span {
   display: inline-block;
@@ -1628,43 +1637,48 @@ textarea:-ms-input-placeholder {
   width: 150px;
 }
 .l-fooder-mian a {
-  color: #C5C5C5;
+  color: #fff;
 }
 .l-fooder-mian .fooder-link {
-  width: 600px;
+  width: 650px;
 }
 .l-fooder-mian .fooder-link h2 {
   color: #fff;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
   display: block;
 }
 .l-fooder-mian .fooder-link li {
   float: left;
-  width: 120px;
+  width: 130px;
 }
 .l-fooder-mian .fooder-link a {
   display: block;
-  text-align: center;
-  color: #C5C5C5;
+  text-align: left;
+  color: #fff;
   height: 26px;
   line-height: 26px;
 }
+.fooder-partner {
+  width: 450px;
+  text-align: center;
+  margin-top: 40px;
+}
 .copyright {
-  padding: 20px 0;
+  padding: 0;
   height: 100px;
-  width: 580px;
+  width: 555px;
   margin-right: auto;
   margin-left: auto;
 }
 .copyright .l-left {
-  width: 580px;
-  float: right;
+  width: 555px;
+  padding-top: 30px;
 }
 .copyright p {
-  color: #C5C5C5;
-  line-height: 20px;
+  color: #fff;
+  line-height: 28px;
 }
 .copyright .l-right {
   padding-top: 30px;
